@@ -1,0 +1,128 @@
+
+    #a {
+        width: 480px;
+        height: 75px;
+        background-color: lightblue;
+    }
+    
+    #b{
+        width: 480px;
+        height: 150px;
+        background-color: lightcoral;
+    }
+    
+    #c {
+    width: 480px;
+    height: 125px;
+    background-color: lightcyan;
+    }
+    
+    #d {
+        width: 480px;
+        height: 125px;
+        background-color: lightgreen;
+        }
+
+    #e {
+        width: 240px;
+        height: 250px;
+        float: left;
+        background-color: lightpink;
+    }
+ 
+    #f {
+        width: 240px;
+        height: 250px;  
+        float: left;
+        background-color: lightskyblue;
+    }
+    #g {
+        width: 240px;
+        height: 250px;
+        float: left;
+        clear: both;
+        background-color: lightyellow;
+    }
+    
+    #h {
+        width: 240px;
+        height: 250px;
+        float: left;
+        background-color: lightgrey;
+    }
+
+    #i{
+        width: 480px;
+        height: 80px;
+        clear: both;
+        background-color: lightseagreen;
+    }
+
+    @media (min-width: 768px){
+        body{
+            display: flex;
+            width: 960px;
+           
+        }
+        
+        #a {
+            width: 960px;
+            height: 100px;
+            background-color: lightgray;
+        }
+        
+        #b{
+            width: 200px;
+            height: 600px;
+            float: left;
+            background-color: lightgreen;
+        }
+        
+        #c {
+        width: 380px;
+        height: 200px;
+        float: left;
+        background-color: lightpink;
+        }
+        
+        #d {
+            width: 380px;
+            height: 200px;
+            float: left;
+            background-color: lightseagreen;
+            } 
+
+        #e {
+            width: 190px;
+            height: 250px;
+            float: left;
+            background-color: lightyellow;
+        }
+     
+        #f {
+            width: 190px;
+            height: 250px;  
+            float: left;
+            background-color: lightsalmon;
+        }
+        #g {
+            width: 190px;
+            height: 250px;
+           clear: none;
+           background-color: lightsteelblue;
+        }
+        
+        #h {
+            width: 190px;
+            height: 250px;
+            background-color: lightyellow;
+        }
+    
+        #i{
+            width: 760px;
+            height: 150px;
+           clear: none;
+           float: left; 
+           background-color: lightslategray;
+        } 
+    }
