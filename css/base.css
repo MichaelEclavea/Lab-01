@@ -1,47 +1,24 @@
-
-
-#a {
-    width: 480px;
-    height: 75px;
+*{
+    box-sizing: border-box;
 }
 
-#b{
-    width: 480px;
-    height: 150px;
+body{
+   
+   display: flex;
+   margin: auto;
+   align-content: center;
 
 }
 
-#c {
-width: 480px;
-height: 125px;
+
+
+div{
+    border: 1px solid black;
+    justify-content: center;  
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+
 }
 
-#d {
-    width: 480px;
-    height: 125px;
-    }
-
-#e {
-    width: 240px;
-    width: 250px;
-}
-
-#f {
-    width: 240px;
-    width: 250px;
-}
-
-#g {
-    width: 240px;
-    width: 250px;
-}
-
-#h {
-    width: 240px;
-    width: 250px;
-}
-
-#i{
-    width: 480px;
-    height: 80px;
-}
