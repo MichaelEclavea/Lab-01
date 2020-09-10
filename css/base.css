@@ -1,24 +1,14 @@
 *{
     box-sizing: border-box;
-}
-
-body{
-   
-   display: flex;
-   margin: auto;
-   align-content: center;
-
-}
-
-
-
-div{
-    border: 1px solid black;
-    justify-content: center;  
-    text-align: center;
-    align-items: center;
+  }
+  div{
+    border: 0.5px solid darkgray;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body{
     margin: auto;
-
-}
-
+    align-content: center;
+    display: grid;
+  }

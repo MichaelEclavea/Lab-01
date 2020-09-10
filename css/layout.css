@@ -1,128 +1,192 @@
-
-    #a {
-        width: 480px;
-        height: 75px;
-        background-color: lightblue;
-    }
-    
-    #b{
-        width: 480px;
-        height: 150px;
-        background-color: lightcoral;
-    }
-    
-    #c {
+body{
     width: 480px;
-    height: 125px;
-    background-color: lightcyan;
-    }
-    
-    #d {
-        width: 480px;
-        height: 125px;
-        background-color: lightgreen;
-        }
+    margin: auto;
+    text-align: center;
+  }
 
-    #e {
-        width: 240px;
-        height: 250px;
-        float: left;
-        background-color: lightpink;
-    }
+  main{
+      display: grid;
+      grid-template-rows: 75px 150px 125px 125px 250px 250px 80px;
+      grid-template-columns: 50% 50%;
+  }
+
+  #a{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    background-color: lightyellow;
+  }
+
+  #b{
+    grid-row: 2/3;
+    grid-column: 1/3; 
+    background-color: lightsteelblue;
+  }
  
-    #f {
-        width: 240px;
-        height: 250px;  
-        float: left;
-        background-color: lightskyblue;
-    }
-    #g {
-        width: 240px;
-        height: 250px;
-        float: left;
-        clear: both;
-        background-color: lightyellow;
-    }
-    
-    #h {
-        width: 240px;
-        height: 250px;
-        float: left;
-        background-color: lightgrey;
-    }
+  #c{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: rgb(189, 232, 118);
+  }
+ 
+  #d{
+    grid-row: 4/5;
+    grid-column: 1/3; 
+    background-color: lightseagreen;
+  }
+ 
+  #e{
+    grid-row: 5/6;
+    grid-column: 1/2; 
+    background-color: lightsalmon;
+  }
+ 
+  #f{
+    grid-row: 5/6;
+    grid-column: 2/3;
+    background-color: lightgreen;
+  }
+  #g{
+    grid-row: 6/7;
+    grid-column: 1/2;
+    background-color: lightgoldenrodyellow;
+  }
+  #h{
+    grid-row: 6/7;
+    grid-column: 2/3;
+    background-color: lightcoral;
+  }
+  #i{
+    grid-row: 7/8;
+    grid-column: 1/3;
+    background-color: lightskyblue;
+  }
+ 
 
-    #i{
-        width: 480px;
-        height: 80px;
-        clear: both;
+  @media (min-width: 480px) and (max-width: 768px){
+
+    #a{
+        grid-row: 1/2;
+        grid-column: 1/3;
+        background-color: lightblue;
+      }
+    
+      #b{
+        grid-row: 2/3;
+        grid-column: 1/3; 
+        background-color: lightcoral;
+      }
+     
+      #c{
+        grid-row: 3/4;
+        grid-column: 1/3;
+        background-color: rgb(189, 232, 118);
+      }
+     
+      #d{
+        grid-row: 4/5;
+        grid-column: 1/3; 
+        background-color: lightcyan;
+      }
+     
+      #e{
+        grid-row: 5/6;
+        grid-column: 1/2; 
+        background-color: lightgray;
+      }
+     
+      #f{
+        grid-row: 5/6;
+        grid-column: 2/3;
+        background-color: lightpink;
+      }
+      #g{
+        grid-row: 6/7;
+        grid-column: 1/2;
         background-color: lightseagreen;
-    }
+      }
+      #h{
+        grid-row: 6/7;
+        grid-column: 2/3;
+        background-color: lightslategray;
+      }
+      #i{
+        grid-row: 7/8;
+        grid-column: 1/3;
+        background-color: lightyellow;
+      }
+
+  }
+
+ 
 
     @media (min-width: 768px){
         body{
-            display: flex;
             width: 960px;
-           
+            margin: auto;
+            
+        }
+        main{
+            height: 700px;
+            display: grid;
+            /* grid-template-rows: 25% 25% 25% 25%; */
+            grid-template-rows: 100px 200px 250px 150px; 
+            grid-template-columns: 20fr 19fr 19fr 19fr 19fr;
         }
         
         #a {
-            width: 960px;
-            height: 100px;
-            background-color: lightgray;
+            background-color: lightskyblue;
+            grid-column: 1/6;
+            grid-row: 1/2;
+            
         }
         
         #b{
-            width: 200px;
-            height: 600px;
-            float: left;
             background-color: lightgreen;
+            grid-column: 1/2;
+            grid-row: 2/5;
         }
         
         #c {
-        width: 380px;
-        height: 200px;
-        float: left;
         background-color: lightpink;
+        grid-column: 2/4;
+        grid-row: 2/3;
+        
         }
         
         #d {
-            width: 380px;
-            height: 200px;
-            float: left;
+            grid-row:2/3; 
+            grid-column: 4/6;
             background-color: lightseagreen;
             } 
 
         #e {
-            width: 190px;
-            height: 250px;
-            float: left;
+            grid-row: 3/4;
+            grid-column: 2/3;    
             background-color: lightyellow;
         }
      
         #f {
-            width: 190px;
-            height: 250px;  
-            float: left;
+            grid-column: 3/4;
+            grid-row: 3/4;
             background-color: lightsalmon;
         }
         #g {
-            width: 190px;
-            height: 250px;
-           clear: none;
+            grid-column: 4/5;
+            grid-row: 3/4;
            background-color: lightsteelblue;
         }
         
         #h {
-            width: 190px;
-            height: 250px;
+            grid-column: 5/6;
+            grid-row: 3/4;
             background-color: lightyellow;
         }
     
         #i{
-            width: 760px;
-            height: 150px;
-           clear: none;
-           float: left; 
+           
+            grid-column: 2/6;
+            grid-row: 4/6;
            background-color: lightslategray;
         } 
+       
     }
